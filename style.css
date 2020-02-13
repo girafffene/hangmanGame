@@ -1,0 +1,171 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.letter {
+  display: inline-block;
+  list-style: none;
+  width: 20px;
+  margin: 0 5px;
+  border-bottom: 1px solid black;
+  text-align: center;
+  color: white;
+}
+
+.current-word {
+  list-style: none;
+}
+
+.correct {
+  background-color: #9370db;
+  transition: 1s ease;
+}
+
+.head {
+  position: relative;
+  bottom: 147px;
+  right: 101px;
+  visibility: hidden;
+  height: 38px;
+}
+
+.body {
+  height: 50px;
+  position: relative;
+  right: 126px;
+  bottom: 98px;
+  visibility: hidden;
+}
+
+.rightA {
+  position: relative;
+  width: 22px;
+  bottom: 134px;
+  right: 133px;
+  visibility: hidden;
+}
+
+.leftA {
+  position: relative;
+  width: 22px;
+  bottom: 134px;
+  right: 178px;
+  visibility: hidden;
+}
+
+.leftL {
+  height: 30px;
+  position: relative;
+  bottom: 69px;
+  right: 214px;
+  visibility: hidden;
+}
+
+.rightL {
+  height: 30px;
+  position: relative;
+  bottom: 69px;
+  right: 219px;
+  visibility: hidden;
+}
+
+.health {
+  border: 2px solid black;
+  width: 150px;
+  height: 35px;
+  position: relative;
+  left: 460px;
+  bottom: 51px;
+}
+
+.healthMeter {
+  background-color: crimson;
+  width: 146px;
+  height: 31px;
+}
+
+.healthText {
+  position: relative;
+  left: 338px;
+  font-size: 20px;
+  color: maroon;
+}
+
+.inputBox {
+  width: 200px;
+  height: 30px;
+}
+
+.inputBox::placeholder {
+  font-size: 15px;
+}
+
+#guess.guessButton {
+  height: 30px;
+  background-color: #e6e6fa;
+  position: relative;
+  bottom: 1px;
+  color: #9370db;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+#restart {
+  color: white;
+  background-color: #7b68ee;
+  border-radius: 5px;
+  width: 257px;
+  height: 36px;
+  margin-top: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.boxTitle {
+  position: absolute;
+  left: 346px;
+  bottom: 872px;
+  font-size: 20px;
+}
+
+.usedLetters {
+  position: absolute;
+  border: 1px solid;
+  width: 350px;
+  height: 240px;
+  left: 346px;
+  bottom: 650px;
+  font-size: 15px;
+  padding: 10px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.giphy-embed {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  bottom: 21px;
+  left: 676px;
+  visibility: hidden;
+}
+
+.giphy-embed-two {
+  width: 900px;
+  height: 800px;
+  position: absolute;
+  bottom: 21px;
+  left: 676px;
+  visibility: hidden;
+}

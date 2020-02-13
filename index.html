@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman!!!</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game">
+      <div class="pic">
+        <img src="assets/hangman.png" />
+        <img class="head" id="head" src="assets/iconmonstr-smiley-24-64.png" />
+        <img class="body" id="body" src="assets/body copy.jpg" />
+        <img class="rightA" id="rightA" src="assets/rightArm copy.jpg" />
+        <img class="leftA" id="leftA" src="assets/leftArm.jpg" />
+        <img class="leftL" id="leftL" src="assets/leftLeg.png" />
+        <img class="rightL" id="rightL" src="assets/rightLeg copy.png" />
+      </div>
+
+      <p class="healthText">Health Bar:</p>
+      <div class="health">
+        <div class="healthMeter" id="health"></div>
+      </div>
+
+      <ul id="letters"></ul>
+      <p id="man"></p>
+      <p id="output" class="output"></p>
+
+      <form id="hangman">
+        <input
+          class="inputBox"
+          type="text"
+          maxlength="1"
+          minlength="1"
+          name="letter"
+          id="letter"
+          placeholder="Guess a letter!!!"
+        />
+        <button
+          class="guessButton"
+          id="guess"
+          name="guess"
+          type="submit"
+          value="Guess"
+        >
+          Guess
+        </button>
+      </form>
+      <button id="restart" name="restart" type="button">restart</button>
+
+      <p class="boxTitle">Letters You've Already Used:</p>
+      <div class="usedLetters" id="usedLetters"></div>
+    </div>
+
+    <iframe
+      src="https://giphy.com/embed/3o84sv2u7KSHKbwPza"
+      width="480"
+      height="360"
+      frameborder="0"
+      class="giphy-embed"
+      allowfullscreen
+      id="gif"
+    ></iframe>
+
+    <iframe
+      id="gifTwo"
+      src="https://giphy.com/embed/t75mH1uC6PFjevrcPa"
+      width="480"
+      height="480"
+      frameborder="0"
+      class="giphy-embed-two"
+      allowfullscreen
+    ></iframe>
+
+    <audio id="winSound" autoplay>
+      <source src="assets/Kids Saying Yay [Sound Effect] (720p).mp4" />
+    </audio>
+
+    <audio id="loseSound" autoplay>
+      <source src="assets/Sad Trombone - Gaming Sound Effect (HD) (720p).mp4" />
+    </audio>
+
+    <script src="main.js"></script>
+    <script src="common-words.js"></script>
+  </body>
+</html>
